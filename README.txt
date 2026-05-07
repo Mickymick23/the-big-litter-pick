@@ -23,7 +23,7 @@ An interactive web app which allows citizens to report litter data from any road
 
 The application is deployed online and can be accessed here: 
 
-https://thebiglitterpick.onrender.com
+https://the-big-litter-pick.onrender.com
 
 ## File Structure
 
