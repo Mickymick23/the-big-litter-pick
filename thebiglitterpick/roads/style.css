@@ -106,12 +106,10 @@ nav a {
 /* SEARCH BAR CONTAINER */
 .search-container {
 	position: absolute;
-	top: 10px;
 	left: 50%;
+	bottom: 22px;
 	transform: translateX(-50%);
 	z-index: 1000;
-	width: calc(100% - 20px);
-	max-width: 420px;
 }
 
 /* SEARCH BAR */
@@ -138,7 +136,6 @@ nav a {
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
-	z-index: 2000;
 }
 
 /* SEARCH BAR - SUGGESTIONS */
@@ -180,8 +177,7 @@ nav a {
 	color: white;
 	font-size: 14px;
 	line-height: 19px;
-	min-width: 120px;
-	max-width: 160px;
+	width: 100px;
 }
 
 /* LEGEND ICONS */
@@ -198,17 +194,3 @@ nav a {
 .legend-c {background:#e67e22;}
 .legend-d {background:#e74c3c;}
 .legend-u {background:#808080;}
-
-/* PHONE FUNCTIONALITY EDITS */
-@media (max-width: 600px) {
-	.search-bar {
-		flex-direction: column;
-		align-items: stretch;
-	}
-	#locate-btn {
-		width: 100%;
-	}
-}
-.leaflet-top.leaflet-right {
-	margin-top: 70px;
-}
