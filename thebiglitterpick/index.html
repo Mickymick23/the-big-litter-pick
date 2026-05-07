@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Title -->
+	<title>The Big Litter Pick</title>
+	<!-- Set Time Zone -->
+	<meta charset="UTF-8">
+	<!-- Ensure page scales correctly for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<nav>
+	<div>
+		<strong>The Big Litter Pick</strong>
+	</div>
+	<div>
+		<a href="roads/roads.html">Map</a>
+		<a href="#about">About</a>
+		<a href="#how">How It Works</a>
+		<a href="#rating">Rating Guide</a>
+		<a href="#safety">Safety</a>
+		<a href="#bts">Behind The Scenes</a>
+	</div>
+</nav>
+<!-- Introduction -->
+<section class="intro">
+	<img src="bin.png" class="intro-icon">
+	<h1>Citizen-Reported Litter Mapping</h1>
+	<p>A dissertation project exploring how public reporting can improve environmental data, awareness, and decision-making.</p>
+	<a href="#about" class="btn">About The Project</a>
+	<a href="roads/roads.html" class="btn">Explore Map</a>
+</section>
+<!-- About -->
+<section id="about">
+	<h2>About the Project</h2>
+	<p>According to <a href="https://www.keepbritaintidy.org/litter-issue-and-why-it-matters" target="_blank">Keep Britain Tidy</a>, 2 million pieces of litter are dropped in the UK every day.</p>
+	<p>However, this also means that if more than just 1 in 35 people were to pick up one piece of litter every day, the UK would be on its way to becoming spotless.</p>
+	<p>Yet litter still remains.</p>
+	<p>This project aims to address this.</p>
+	<p>Though traditional government data exists, it has its limitations. Country level litter data in the form of National Indicators stopped being collected in 2010 due to budget cuts, creating a void of data. Some local councils adapted by adopting the LAMS system, others created their own way of monitoring litter data, and others still don’t have a system in place today. This sporadic litter management system across the UK hinders not only litter collection, but also our ability to perform data analysis to understand waste management trends across the country.</p>
+	<p>Even if the National Indicators still existed, there are many benefits of crowdsourced data compared to the traditional forms of government data collection. Though it may not be collected by professionals, it would be much more real-time, and geographically exact. We would know where and when exactly that data was reported, as soon as it’s reported. It would even have the benefit of engaging users to collect the litter.</p>
+	<p>To demonstrate this benefit, this project uses a smaller area, the county of Hertfordshire, to test 25 semi-randomly selected segments in every district, which you, as the participant, will make a judgement on, according to the same classification used by the, now historic, National Indicators.</p>
+</section>
+<!-- How It Works -->
+<section id="how">
+	<h2>How It Works</h2>
+	<div class="grid">
+		<div class="card">
+			<h3>1. View the Map</h3>
+			<p>Browse roads and explore litter data visually.</p>
+			<p>Note: smaller roads and paths are only visible if you zoom in.</p>
+		</div>
+		<div class="card">
+			<h3>2. Click a Road</h3>
+			<p>Select a road segment to view its current rating.</p>
+		</div>
+		<div class="card">
+			<h3>3. Submit a Rating</h3>
+			<p>Rate litter levels from A (clean) to D (heavily littered).</p>
+			<p>See Rating Guide below for assistance. </p>
+		</div>
+		<div class="card">
+			<h3>4. Data Updates</h3>
+			<p>Your submission contributes to real-time aggregated data.</p>
+		</div>
+	</div>
+</section>
+<!-- Rating Guide -->
+<section id="rating">
+	<h2>Rating Guide</h2>
+	<ul>
+		<li><strong>A (Excellent)</strong> – No litter</li>
+		<li><strong>B (Good)</strong> – Predominantly free of litter except for some small items</li>
+		<li><strong>C (Average)</strong> – Widespread distribution of litter and refuse, with minor accumulations</li>
+		<li><strong>D (Poor)</strong> – Heavily littered, with significant accumulations</li>
+	</ul>
+</section>
+<!-- Safety -->
+<section id="safety">
+	<h2>Safety & Reporting Guidelines</h2>
+	<ul>
+		<li>Do not put yourself at risk when reporting litter</li>
+		<li>Only report areas that are safely accessible</li>
+		<li>Do not enter private property</li>
+		<li>Do not report from motorways unless visible from a safe, legal location(e.g. footbridge or public footpath)</li>
+		<li>Respect local laws and surroundings at all times</li>
+	</ul>
+</section>
+<!-- Impact -->
+<section id="bts">
+	<h2>Behind The Scenes</h2>
+	<p>Once you submit a rating, the system collects your data anonymously and each submission is placed into a database which is aggregated for each road segment and an average is calculated using a numerical conversion of the categorical variables. If there have been more than ten ratings, the system will use the most recent ratings to ensure the data is the most up to date. However it will not delete old data, as it is still valuable. While this provides a valuable insight, it is important to remember that the data is subjective and depends highly on user perception and participation levels, like most crowdsourced data.</p>
+</section>
+<!-- Footer -->
+<footer>
+	<p>Citizen-Reported Litter Mapping Project • Michael Grimston • University of Leeds</p>
+	<p>Contact: gy23mpgg@leeds.ac.uk</p>
+	<p><a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Icon created by Freepik - Flaticon</a></p>
+</footer>
+</body>
+
+</html>

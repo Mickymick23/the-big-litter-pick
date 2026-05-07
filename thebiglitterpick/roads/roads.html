@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Title -->
+	<title>The Big Litter Pick</title>
+	<!-- Set Time Zone -->
+	<meta charset="UTF-8">
+	<!-- Ensure page scales correctly for mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<!-- Geocoder CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	<!-- Geocoder JS -->
+	<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+	<!-- Custom JS -->
+	<script src="roads.js"></script>
+</head>
+
+<!-- Navigation Bar -->
+<nav>
+	<div>
+		<strong>The Big Litter Pick</strong>
+	</div>
+	<div>
+		<a href="../index.html">Home</a>
+		<a href="../index.html#about">About</a>
+		<a href="../index.html#how">How It Works</a>
+		<a href="../index.html#rating">Rating Guide</a>
+		<a href="../index.html#safety">Safety</a>
+		<a href="../index.html#bts">Behind The Scenes</a>
+	</div>
+</nav>
+
+<!-- Map -->
+<body onload = "initialize()">
+	<div id="map"></div>
+</body>
+
+</html>

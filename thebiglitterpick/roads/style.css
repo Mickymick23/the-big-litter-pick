@@ -1,0 +1,196 @@
+/* GLOBAL PAGE SETTINGS */
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+}
+
+/* PAGE LAYOUT */
+body {
+	display: flex;
+	flex-direction: column;
+	background: #181818;
+	color: #f5f5f5;
+}
+
+/* NAVIGATION BAR */
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 28px;
+	background: #121212;
+	position: sticky;
+	top: 0;
+}
+
+/* NAVIGATION BAR LINKS */
+nav a {
+	color: #f0f0f0;
+	margin-left: 18px;
+	text-decoration: none;
+}
+
+/* MAP CONTAINER */
+#map {
+	flex: 1;
+	min-height: 0;
+	width: 100%;
+}
+
+/* INFORMATION PANEL */
+.leaflet-control.road-info-control {
+	background: rgba(0, 0, 0, 0.65) !important;
+	padding: 11px !important;
+	border-radius: 5px !important;
+	color: white !important;
+	font-size: 15px;
+	line-height: 19px;
+	width: 290px;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
+}
+
+/* INFORMATION PANEL - DROP DOWN MENU */
+#road-info-content select {
+	width: 100%;
+	margin-top: 7px;
+	padding: 5px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+/* INFORMATION PANEL - SUBMIT BUTTON */
+#road-info-content button {
+	width: 100%;
+	margin-top: 7px;
+	padding: 5px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	background-color: #3a92d8;
+	color: white;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+/* INFORMATION PANEL - SUBMIT BUTTON HOVER */
+#road-info-content button:hover {
+	background-color: #2f78b5;
+}
+
+/* PANEL SUBMISSION MESSAGE */
+#panel-message {
+	margin-top: 9px;
+	padding: 7px;
+	border-radius: 4px;
+	font-size: 14px;
+	display: none;
+	text-align: center;
+}
+
+/* PANEL SUBMISSION MESSAGE - SUCCESS */
+#panel-message.success {
+	background: rgba(46, 160, 90, 0.2);
+	color: #33cc77;
+	display: block;
+}
+
+/* PANEL SUBMISSION MESSAGE - FAILURE */
+#panel-message.error {
+	background: rgba(180, 50, 40, 0.2);
+	color: #ff5c5c;
+	display: block;
+}
+
+/* SEARCH BAR CONTAINER */
+.search-container {
+	position: absolute;
+	left: 50%;
+	bottom: 22px;
+	transform: translateX(-50%);
+	z-index: 1000;
+}
+
+/* SEARCH BAR */
+.search-bar {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	background: rgba(0,0,0,0.6);
+	padding: 7px;
+	border-radius: 9px;
+	backdrop-filter: blur(5px);
+	position: relative;
+}
+
+/* SEARCH BAR - EXPANDED */
+.leaflet-control-geocoder-alternatives {
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	width: 100%;
+	margin-bottom: 5px;
+	background: white;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+/* SEARCH BAR - SUGGESTIONS */
+.search-bar:focus-within .leaflet-control-geocoder-alternatives {
+	display: block;
+}
+
+/* SEARCH BAR - EXPANDED WIDTH */
+.leaflet-control-geocoder.leaflet-control-geocoder-expanded {
+	width: 280px;
+}
+
+/* LOCATE BUTTON */
+#locate-btn {
+	padding: 7px 9px;
+	background: #3a92d8;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 14px;
+	box-shadow:
+		0 3px 0 #245a85,
+		0 5px 7px rgba(0,0,0,0.3),
+		inset 1px 1px 2px rgba(250,250,250,0.2),
+		inset -1px -1px 2px rgba(0,0,0,0.2);
+}
+
+/* LOCATE BUTTON - HOVER */
+#locate-btn:hover {
+	background: #2f78b5;
+}
+
+/* LEGEND BOX */
+.legend-box {
+	background: rgba(0,0,0,0.6);
+	padding: 7px;
+	border-radius: 5px;
+	color: white;
+	font-size: 14px;
+	line-height: 19px;
+	width: 100px;
+}
+
+/* LEGEND ICONS */
+.legend-icon {
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+/* LEGEND ICONS COLOURS */
+.legend-a {background:#2ecc71;}
+.legend-b {background:#f1c40f;}
+.legend-c {background:#e67e22;}
+.legend-d {background:#e74c3c;}
+.legend-u {background:#808080;}

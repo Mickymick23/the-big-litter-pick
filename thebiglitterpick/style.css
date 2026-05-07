@@ -1,0 +1,116 @@
+/* GLOBAL PAGE SETTINGS */
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #151515;
+	color: white;
+	line-height: 1.55;
+}
+
+/* NAVIGATION BAR */
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 14px 28px;
+	background: #101010;
+	position: sticky;
+	top: 0;
+}
+
+/* NAVIGATION BAR LINKS */
+nav a {
+	color: white;
+	margin-left: 18px;
+	text-decoration: none;
+}
+
+/* INTRO SECTION */
+.intro {
+	text-align: center;
+	padding: 90px 20px;
+	background: linear-gradient(to bottom, #2a2a2a, #1c1c1c);
+}
+
+/* INTRO TITLE */
+.intro h1 {
+	font-size: 40px;
+	margin-bottom: 18px;
+}
+
+/* INTRO TEXT */
+.intro p {
+	max-width: 580px;
+	margin: 0 auto 28px;
+	font-size: 17px;
+	color: #c9c9c9;
+}
+
+/* INTRO - ICON */
+.intro-icon {
+	width: 55px;
+	margin-bottom: 12px;}
+
+/* BUTTONS */
+.btn {
+	padding: 11px 18px;
+	margin: 8px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	background: #3a8edb;
+}
+
+/* BUTTON HOVER */
+.btn:hover {
+	background: #2f79bb;
+}
+
+/* CONTENT SECTIONS */
+section {
+	padding: 55px 20px;
+	max-width: 960px;
+	margin: auto;
+}
+
+/* SECTION HEADINGS */
+h2 {
+	margin-bottom: 18px;
+	border-bottom: 2px solid #3f3f3f;
+	padding-bottom: 8px;
+}
+
+/* GRID */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 18px;
+	text-align: center;
+}
+
+/* GRID - CARDS */
+.card {
+	background: #262626;
+	padding: 18px;
+	border-radius: 7px;
+}
+
+/* LISTS */
+ul {
+	padding-left: 18px;
+}
+
+/* LINKS */
+a {
+	color: #3a8edb;
+}
+
+/* FOOTER */
+footer {
+	text-align: center;
+	padding: 28px;
+	background: #101010;
+	margin-top: 35px;
+	font-size: 13px;
+}
