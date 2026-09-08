@@ -15,11 +15,11 @@ function initialize() {
 	var map = L.map('map').setView([51.84, -0.225], 10);
 	
 	// BASEMAP
-	// add dark basemap to map
-	L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-		attribution: '&copy; OpenStreetMap contributors & CartoDB'
+	// add dark basemap
+	L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+	    attribution: 'Tiles &copy; Esri'
 	}).addTo(map);
-
+	
 	// BOUNDARY
 	// request Hertfordshire boundary from database and display on map
 	fetch('boundary.php')
