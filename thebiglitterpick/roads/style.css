@@ -197,5 +197,5 @@ nav a {
 
 /* BASEMAP BRIGHTNESS */
 .dark-basemap {
-    filter: brightness(40%) contrast(130%);
+    filter: brightness(65%) contrast(115%);
 }
