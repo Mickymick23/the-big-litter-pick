@@ -194,3 +194,8 @@ nav a {
 .legend-c {background:#e67e22;}
 .legend-d {background:#e74c3c;}
 .legend-u {background:#808080;}
+
+/* BASEMAP BRIGHTNESS */
+.dark-basemap {
+    filter: brightness(40%) contrast(130%);
+}
